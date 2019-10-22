@@ -1,0 +1,32 @@
+.points {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $black;
+    @media screen and (max-width: $phoneWidth) {
+      width: 16px;
+      height: 16px;
+    }
+    &_red {
+      background-color: $red;
+    }
+    &_black {
+      background-color: $black;
+    }
+    &_orange {
+      background-color: $orange;
+    }
+  }
+  &_80 {
+    min-width: 80px;
+    @media screen and (max-width: $phoneWidth) {
+      min-width: 63px;
+    }
+  }
+}

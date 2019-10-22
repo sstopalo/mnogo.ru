@@ -1,0 +1,53 @@
+.toggle-btn {
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  outline: transparent solid 0;
+  opacity: 1;
+  &__open {
+    display: none;
+    width: 20px;
+    height: 16px;
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $black;
+      top: 5px;
+    }
+  }
+  &__close {
+    width: 20px;
+    height: 16px;
+    border: none;
+    min-height: auto;
+    &:before, &:after {
+      top: 0;
+      left: auto;
+      right: auto;
+      position: absolute;
+      content: ' ';
+      height: 20px;
+      width: 2px;
+      background-color: $black;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+  }
+  &_open {
+    display: block;
+  }
+  &_none {
+    display: none;
+  }
+}

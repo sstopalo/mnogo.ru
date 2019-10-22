@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тестовое задание Mnogo.ru Разрабочик Топало Станислав</title>
+</head>
+<body id="body">
+<header class="header header_bg-orange">
+  <div class="wrap wrap_desk header__wrap">
+    <div class="points points_80">
+      <ul class="points__list">
+        <li class="points__item points__item_red"></li>
+        <li class="points__item points__item_black"></li>
+        <li class="points__item points__item_orange"></li>
+      </ul>
+    </div>
+    <nav class="header__nav">
+      <button class="toggle-btn toggle-btn__open toggle-btn__open-js"></button>
+      <button class="toggle-btn toggle-btn__close toggle-btn_none toggle-btn__close-js"></button>
+      <ul class="menu-list menu-list_270 menu-list_mobile menu-list-js">
+        <li class="menu-list__item">
+          <a class="menu-list__link menu-list__link__border-yellow btn-scroll-js" href="#body">Вверх</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link menu-list__link__border-yellow btn-scroll-js" href="#slider">Блок с блоками</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link menu-list__link__border-yellow btn-scroll-js" href="#registration">Форма</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <div class="wrap wrap_desk main__wrap main__wrap_center">
+    <h1 class="main__title">Сверстай меня полностью</h1>
+    <h2 class="main__subtitle">Здесь необходимо, чтобы наш друг немного сдвигался вправо, если курсор находится в правой половине экрана либо, соответственно, влево</h2>
+    <div class="parallax parallax_main">
+      <div data-speed="20" class="parallax__layer parallax-js"></div>
+    </div>
+  </div>
+</main>
+<article class="article">
+  <div class="wrap wrap_desk-m article__wrap">
+    <h3 class="article__title">А это еще один заголовок</h3>
+    <ul class="article__list">
+      <li class="article__item">Нам нужен полностью адаптивный сайт, чтобы он был красив для любого разрешения и любого устройства. А если ты умеешь делать так, чтобы и кегль подстраивался — наш дизайнер пустит слезу, а может даже две. А потом выпьет дома чая за твое здоровье.</li>
+      <li class="article__item">Если при скроллинге изображения будут идти плавно и асинхронно — наш дизайнер опять пустит слезу от счастья. А еще мы не любим висячие предлоги и союзы. Зато любим ховеры</li>
+    </ul>
+  </div>
+</article>
+<section id="slider" class="slider">
+  <div class="wrap wrap_desk slider__wrap">
+    <ul id="slider-js" class="slider__list slider-js">
+      <li class="slider__item">
+        <h4 class="slider__title">Блок 1</h4>
+        <p class="slider__description">Это наш любимый блок, он самый стильный, подтянутый и аккуратный</p>
+        <a href="#" class="slider__link">Подробнее ></a>
+      </li>
+      <li class="slider__item">
+        <h4 class="slider__title">Блок 2</h4>
+        <p class="slider__description">Этот блок нам нравится меньше, возможно он много болел в детстве</p>
+        <a href="#" class="slider__link">Подробнее ></a>
+      </li>
+      <li class="slider__item">
+        <h4 class="slider__title">Блок 3</h4>
+        <p class="slider__description">А этот слишком много ест... И ест чужую еду, как наш арт-директор, хотя это ложь</p>
+        <a href="#" class="slider__link">Подробнее ></a>
+      </li>
+      <li class="slider__item">
+      <h4 class="slider__title">Блок 4</h4>
+      <p class="slider__description">Это наш любимый блок, он самый стильный, подтянутый и аккуратный</p>
+      <a href="#" class="slider__link">Подробнее ></a>
+    </li>
+      <li class="slider__item">
+        <h4 class="slider__title">Блок 5</h4>
+        <p class="slider__description">Это наш любимый блок, он самый стильный, подтянутый и аккуратный</p>
+        <a href="#" class="slider__link">Подробнее ></a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="registration" class="registration">
+  <div class="wrap wrap_desk-m registration__wrap">
+    <div class="registration__info">
+      <h4 class="registration__title">Форма нам тоже пригодится</h4>
+      <p class="registration__subtitle">Первый абзац бесполезного текста, хотя может и полезного, может в нем есть подсказки... А может и нет. Этого не знает никто. Даже тот, кто его писал.</p>
+      <p class="registration__subtitle">Не забывай креативить, предлагать решения, исправлять наши ошибки, ошибки природы, вселенной, ошибки ЖКХ.</p>
+    </div>
+    <div class="registration__form">
+      <form class="form" action="" method="post" enctype="multipart/form-data">
+        <input type="text" id="surname" name="surname" class="form__all-input" title="Фамилия" placeholder="Фамилия">
+        <input type="text" id="name" name="name" class="form__all-input" title="Имя" placeholder="Имя">
+        <input type="email" id="email" name="email" class="form__all-input" title="Эл. почта" placeholder="Эл. почта">
+        <input type="tel" id="tel" name="tel" class="form__all-input" title="Телефон" placeholder="Телефон">
+        <p class="form__tel-description">Мы будем использовать ваш номер телефона для навязчивого спама</p>
+        <input type="date" id="date" name="date" class="form__all-input" title="Дата рождения" placeholder="Дата рождения">
+        <div class="form__sex">
+          <input id="man" name="sex" type="radio" value="man">
+          <label for="man" class="form__radio">Мужчина</label>
+          <input id="female" name="sex" type="radio" value="female">
+          <label for="female" class="form__radio form__radio-border">Не мужчина</label>
+        </div>
+        <div class="form__checkbox">
+          <input class="form__agree" id="agree" name="agree" type="checkbox">
+          <label for="agree" class="form__checkbox-custom"></label>
+          <label for="agree" class="form__checkbox-text">Соглашаюсь<a href="#" class="form__checkbox-link">на все</a></label>
+        </div>
+        <div class="form__btn-wrap">
+          <input type="submit" class="form__btn-submit form__all-input" value="Нажми на меня">
+          <input type="reset" class="form__btn-reset form__all-input" value="На меня тоже можно">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="wrap wrap_desk footer__wrap"></div>
+</footer>
+</body>
+</html>

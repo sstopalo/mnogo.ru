@@ -1,0 +1,47 @@
+.article {
+  &__wrap {
+    padding-top: 80px;
+    text-align: center;
+    @media screen and (max-width: $phoneWidth) {
+      padding-top: 0;
+    }
+  }
+  &__title {
+    display: inline-block;
+    font-size: 32px;
+    line-height: 1.16em;
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 24px;
+    }
+  }
+  &__list {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    @media screen and (max-width: $phoneWidth) {
+      margin: 0;
+    }
+  }
+  &__item {
+    line-height: 1.6em;
+    color: $grey;
+    width: calc(50% - 10px);
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 14px;
+      width: 100%;
+    }
+    &:nth-child(odd) {
+      margin: 10px 10px 0 0;
+      @media screen and (max-width: $phoneWidth) {
+        margin: 20px 0 0 0;
+      }
+    }
+    &:nth-child(even) {
+      margin: 10px 0 0 10px;
+      @media screen and (max-width: $phoneWidth) {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+}

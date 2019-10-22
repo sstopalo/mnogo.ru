@@ -1,0 +1,109 @@
+.slick-next:before, .slick-prev:before {
+  display: none;
+}
+.slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
+  background-color: $yellow;
+  background-image:  url('/assets/img/arrow-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: inherit;
+  outline: none;
+}
+.slider {
+  &__wrap {
+    max-width: 1320px;
+    padding: 60px 0 80px 80px;
+    @media screen and (max-width: $mDesktopWidth) {
+      padding: 60px 0 80px 20px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      padding: 40px 0 0 0!important;
+    }
+  }
+  &__item {
+    background: $greyF4F ;
+    padding: 20px;
+    max-width: 346px;
+    margin: 0 10px;
+    @media screen and (max-width: $phoneWidth) {
+      max-width: 220px;
+    }
+
+  }
+  &__title {
+  font-size: 20px;
+    line-height: 1.4em;
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 16px;
+    }
+  }
+  &__description {
+    margin: 20px 0 0 0;
+    color: $grey;
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 14px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    margin: 34px 0 0 0;
+    color: $link;
+    border-bottom: 1px solid $greyF4F;
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 14px;
+      margin: 30px 0 0 0;
+    }
+    &:hover {
+      border-bottom: 1px solid $link;
+    }
+  }
+  & .slick-next, .slick-prev {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    top: auto;
+  }
+  & .slick-prev {
+    left: 10px;
+    bottom: -60px;
+    transform: rotateY(180deg);
+  }
+  & .slick-next {
+    left: 60px;
+    bottom: -80px;
+  }
+  &__aktiv-arrow {
+    background-image:  url('/assets/img/arrow-active.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    background-color: $yellow;
+  }
+  &__hide-arrow {
+    background-image:  url('/assets/img/arrow-hide.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    background-color: $greyF4F;
+  }
+}
+.slick-dots {
+  bottom: -30px;
+}
+.slick-dots li, .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background: $greyC4C;
+}
+.slick-dots li button:before {
+  width: 10px;
+  height: 10px;
+  content: "";
+}
+.slick-dots li.slick-active button:before {
+  background: $orange;
+}
+

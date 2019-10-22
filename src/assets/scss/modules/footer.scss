@@ -1,0 +1,16 @@
+.footer {
+  &__wrap {
+    max-width: 800px;
+    height: 150px;
+    background: url('/assets/img/footer-bg.svg') no-repeat  left 30px bottom;
+    background-size: contain;
+    @media screen and (max-width: $tableWidth ) {
+      height: 80px;
+      background: url('/assets/img/footer-bg.svg') no-repeat center bottom;
+      background-size: contain;
+    }
+    @media screen and (max-width: $smPhoneWidth  ) {
+      height: 50px;
+    }
+  }
+}

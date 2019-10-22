@@ -1,0 +1,39 @@
+.main {
+  background-color: $default;
+  margin: 80px 0 0 0;
+  @media screen and (max-width: $phoneWidth) {
+    margin: 60px 0 0 0;
+  }
+  &__wrap {
+    padding: 80px 20px 50px 20px;
+    @media screen and (max-width: $phoneWidth) {
+      padding: 40px 20px 10px 20px;
+    }
+    &_center {
+      text-align: center;
+    }
+  }
+  &__title {
+    font-size: 60px;
+    line-height: 1.16em;
+    font-weight: 400;
+    @media screen and (max-width: $tableWidth) {
+      font-size: 40px;
+      font-weight: 300;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 30px;
+    }
+
+  }
+  &__subtitle {
+    margin: 20px 0 50px 0;
+    font-size: 20px;
+    line-height: 1.4em;
+    color: $grey;
+    @media screen and (max-width: $phoneWidth) {
+      margin: 20px 0 15px 0;
+      font-size: 16px;
+    }
+  }
+}

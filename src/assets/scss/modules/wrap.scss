@@ -1,0 +1,11 @@
+.wrap {
+  margin: 0 auto;
+  &_desk {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  &_desk-m {
+    max-width: 996px;
+    padding: 0 20px;
+  }
+}

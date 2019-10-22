@@ -1,0 +1,138 @@
+.form {
+  &__all-input {
+    box-sizing: border-box;
+    padding: 15px 20px;
+    width: 100%;
+    height: 50px;
+    background: $default;
+    border: 1px solid $border-base;
+    border-radius: 3px;
+    outline: none;
+    color: $grey;
+    @media screen and (max-width: $tableWidth) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $smTableWidth) {
+      font-size: $mainFontSize;
+    }
+    &:-ms-input-placeholder {
+      color: $grey;
+    }
+    &::-ms-input-placeholder {
+      color: $grey;
+    }
+    &::-webkit-input-placeholder {
+      color: $grey;
+    }
+    &:-moz-placeholder {
+      color: $grey;
+    }
+    &::-moz-placeholder {
+      color: $grey;
+    }
+    &:nth-child(n+2) {
+      margin: 20px 0 0 0;
+    }
+  }
+  &__tel-description {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    color: $greyA0A;
+  }
+  & input[type="radio"] {
+    display:none;
+  }
+  & input[type="radio"]:checked + .form__radio {
+    background: $orange;
+  }
+  &__sex {
+    display: flex;
+    box-sizing: border-box;
+    height: 50px;
+    background: none;
+    border: 1px solid $border-base;
+    border-radius: 3px;
+    outline: none;
+    max-width: 365px;
+    margin: 20px 0 0 0;
+  }
+  &__radio {
+    text-align: center;
+    display: block;
+    width: 50%;
+    padding: 15px 20px;
+    @media screen and (max-width: $tableWidth) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $smTableWidth) {
+      font-size: $mainFontSize;
+    }
+    &-border {
+      border-left: 1px solid $border-base;
+    }
+  }
+  &__checkbox {
+    margin: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+  }
+  & input[type="checkbox"] {
+    display:none;
+  }
+  &__checkbox-custom {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $border-base;
+    z-index: 1;
+  }
+  &__agree:checked + .form__checkbox-custom:before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    color: $orange;
+    background-color: $orange;
+    z-index: 2;
+  }
+  &__checkbox-text {
+    margin: 0 0 0 15px;
+    font-size: 12px;
+  }
+  &__checkbox-link {
+    margin: 0 0 0 3px;
+    font-size: 12px;
+    color: $link;
+    border-bottom: 1px solid $default;
+    &:hover {
+      border-bottom: 1px solid $link;
+    }
+  }
+  &__btn-wrap {
+    margin: 20px 0 0 0;
+    display: flex;
+    @media screen and (max-width: $phoneWidth) {
+      flex-wrap: wrap;
+    }
+  }
+  &__btn-submit, .form__btn-reset {
+    cursor: pointer;
+    width: 48%;
+    @media screen and (max-width: $phoneWidth) {
+      width: 100%;
+    }
+  }
+  &__btn-submit:hover, .form__btn-reset:hover {
+    color: $default;
+    background: $orange;
+    border: 1px solid $orange;
+  }
+  &__btn-reset:nth-child(n+2) {
+    margin: 0 0 0 4%;
+    @media screen and (max-width: $phoneWidth) {
+      margin: 20px 0 0 0;
+    }
+  }
+}

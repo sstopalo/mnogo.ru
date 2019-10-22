@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #764DFA;
+  &__wrap {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $phoneWidth) {
+      height: 60px;
+    }
+  }
+  &__nav {
+    position: relative;
+  }
+  &_bg-orange {
+    background-color: $yellow;
+  }
+}

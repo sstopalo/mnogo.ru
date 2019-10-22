@@ -1,0 +1,52 @@
+.parallax {
+  &__layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('/assets/img/man.svg') no-repeat center;
+    background-size: 49%;
+    z-index: 2;
+    @media screen and (max-width: $tableWidth) {
+      background-size: 50%;
+    }
+    @media screen and (max-width: $smTableWidth) {
+      background-size: 65%;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      background-size: 80%;
+    }
+    @media screen and (max-width: $smPhoneWidth) {
+      background-size: 80%;
+    }
+  }
+  &_main{
+    max-width: 896px;
+    min-height: 568px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    background-image:  url('/assets/img/bg.svg'), url('/assets/img/calendar.svg'), url('/assets/img/clock.svg'), url('/assets/img/photo.svg'), url('/assets/img/bg2.svg');
+    background-position: bottom 7% center, center left, top 20px left 70px, top 180px right, top 30px center ;
+    background-repeat: no-repeat;
+    background-size: 75%, 15%, 10%, 20%, 73%;
+    @media screen and (max-width: $tableWidth) {
+      min-height: 468px;
+      background-size: 70%, 15%, 10%, 17%, 73%;
+    }
+    @media screen and (max-width: $smTableWidth) {
+      background-position: bottom 7% center, center left, top 20px left 30px, top 180px right, top 30px center ;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      min-height: 400px;
+      background-size: 80%,15%,10%,17%,73%;
+      background-position: bottom 7% center,0,top 105px left 30px,top 180px right,top 105px center;
+    }
+    @media screen and (max-width: $smPhoneWidth) {
+      min-height: 300px;
+      background-size: 85%,15%,10%,17%,73%;
+      background-position: bottom 7% center,0,top 65px left 30px,top 130px right,top 75px center;
+    }
+  }
+}
